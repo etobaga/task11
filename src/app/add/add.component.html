@@ -1,9 +1,9 @@
 <div class="mid">
   <h1>ToDo List</h1>
   <div class="mid2">
-<form class="form-inline" action="/action_page.php">
-  <input type="email" id="email" placeholder="NewTask" name="email">
-  <button type="submit">Add</button>
+<form class="form-inline">
+  <input type="email" id="email" placeholder="NewTask" name="email" #newItem>
+  <button type="submit" (click)="addNewItem(newItem.value)">Add</button>
 </form>
   </div>
 </div>

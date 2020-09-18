@@ -1,0 +1,7 @@
+
+<style></style>
+<app-add (newItemEvent)="addItem($event)"></app-add>
+
+<ul class = 'list-group' style="  margin: 0 auto 0; width: 50%; padding: 25px; list-style-type:none; " >
+<app-list *ngFor="let item of items" [item]="item"></app-list>
+</ul>

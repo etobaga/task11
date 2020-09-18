@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-add',
@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AddComponent {
   title = 'task1';
+@Output() newItemEvent = new EventEmitter<string>();
+addNewItem(value: string){
+
+  this.newItemEvent.emit(value);
+  alert('task is added');
+}
 }
